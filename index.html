@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的第一个网站</title>
+  <!-- 用 CSS 简单写点样式，纯粹为了让你看得更直观 -->
+  <style>
+
+    /* 2. 让 html、body 占满视口高度 */
+    html, body {
+        height: 100%;
+    }
+    body   {
+         margin:50px;
+         font-family: Arial, sans-serif;
+         background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+          url("主页背景图.png") no-repeat fixed; 
+          background-size: cover;
+          overflow-y: auto;   /* 如果内容超出仍允许滚动 */
+         }
+    header, footer {
+         color:#000000; 
+         padding:1rem 2rem; }
+    nav    {
+         padding:0.5rem 2rem; }
+    main   {
+         padding:2rem; }
+    nav a  {
+         margin-right:1rem; 
+         color:#0077cc; 
+         text-decoration:none; }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. 页面顶部：站点标题 & 可能的主视觉 -->
+  <header>
+    <h1>Hello，我是摆烂玩家</h1>
+    <p>一个刚学前端的新手</p>
+  </header>
+
+  <!-- 2. 主导航：放菜单链接 -->
+  <nav>
+    <a href="#about">关于我</a>
+    <a href="F:\网站学习用\源码\我的第一个网站\collection.html">收藏品</a>
+    <a href="#contact">联系我</a>
+  </nav>
+
+  <!-- 3. 主体内容：网站真正的“正文” -->
+  <main>
+    <section id="about">
+      <h2>关于我</h2>
+      <p>一个臭看番打游戏的二刺螈（最喜欢看美少女贴贴啦！）</p>
+    </section>
+
+    <section id="works">
+      <h2>收藏品</h2>
+      <p>都是好看的......嘿...嘿嘿嘿......</p>
+      <img src="贴图1.png" alt="雅小姐~">
+    </section>
+
+    <section id="contact">
+      <h2>联系我</h2>
+      <p>邮箱：xxx@example.com</p>
+    </section>
+  </main>
+
+  <!-- 4. 页面底部：版权、备案、社交链接 -->
+  <footer>
+    <small>© 2025 SwingPlayer | <a href="https://github.com/yourname" style="color:#000000;">GitHub</a></small>
+  </footer>
+
+</body>
+</html>
